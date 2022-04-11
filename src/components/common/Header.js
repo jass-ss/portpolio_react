@@ -7,12 +7,12 @@ function Header({ type }) {
 	const active = { color: 'beige' };
 	return (
 		<header className={type}>
+			<h1>
+				<NavLink exact to='/' activeStyle={active}>
+					LOGO
+				</NavLink>
+			</h1>
 			<div className='inner'>
-				<h1>
-					<NavLink exact to='/' activeStyle={active}>
-						LOGO
-					</NavLink>
-				</h1>
 				<ul id='gnb'>
 					<li>
 						<NavLink to='/brand' activeStyle={active}>

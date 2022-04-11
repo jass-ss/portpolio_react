@@ -4,6 +4,14 @@ header {
 	background: #222;
 	padding: 0px 5vw;
 
+	h1 a {
+		position: absolute;
+		left: 10%;
+		top: 30px;
+		color: #fff;
+		font: bold 4vmin 'arial';
+	}
+
 	.inner {
 		width: 1180px;
 		height: 80px;
@@ -11,12 +19,6 @@ header {
 		position: relative;
 	}
 
-	h1 a {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		color: #fff;
-	}
 	#gnb {
 		position: absolute;
 		bottom: 10px;
