@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import './scss/style.scss';
+//common
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+
+//main
+import Visual from './components/main/Visual';
+import Content from './components/main/Content';
+
+//sub
+import Youtube from './components/sub/Youtuobe';
+import Gallery from './components/sub/Gallery';
+import Help from './components/sub/Help';
+import Product from './components/sub/Product';
+import Store from './components/sub/Store';
+import Brand from './components/sub/Brand';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Switch>
+				{/* 같은 경로의 router 연결시 구체적인 라우터 하나만 적용.*/}
+				<Route exact path='/'>
+					<Header type={'main'} />
+					<Visual />
+					<Content />
+				</Route>
+				<Route path='/'>
+					<Header type={'sub'} />
+				</Route>
+			</Switch>
+			<Route path='/youtube' component={Youtube} />
+			<Route path='/gallery' component={Gallery} />
+			<Route path='/help' component={Help} />
+			<Route path='/product' component={Product} />
+			<Route path='/brand' component={Brand} />
+			<Route path='/store' component={Store} />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
