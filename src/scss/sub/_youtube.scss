@@ -3,6 +3,7 @@
 		background-color: rgb(192, 166, 219);
 		width: 100%;
 		height: 50vh;
+		position: relative;
 	}
 	.inner {
 		width: 1180px;
@@ -12,7 +13,7 @@
 
 		h1 {
 			position: absolute;
-			top: -20%;
+			top: -99999%;
 			opacity: 0;
 		}
 		.list {
@@ -62,6 +63,65 @@
 						width: 100%;
 						height: 100%;
 						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and(max-width:1179px) {
+	.content.youtube {
+		figure {
+			display: none;
+		}
+		.inner {
+			width: 100%;
+			padding-top: 12vmin;
+			.list {
+				width: 100%;
+				position: relative;
+				> article {
+					display: inline-block;
+					position: relative;
+					width: 50%;
+					height: 50vmin;
+					text-align: center;
+					background: none;
+					padding: 0;
+					margin-right: 0;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+					> P {
+						position: absolute;
+						bottom: 5%;
+						left: 5%;
+						color: #fff;
+						font: 3vmin 'arial';
+					}
+				}
+				.data {
+					width: 100%;
+					margin-top: 10vmin;
+					margin-bottom: 20vmin;
+					> article {
+						display: inline-block;
+						width: 33%;
+						height: 35vmin;
+						margin-right: 0.5%;
+						margin-top: 10%;
+						border-radius: 5px;
+						&:nth-of-type(3n) {
+							margin-right: 0;
+						}
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
 					}
 				}
 			}
