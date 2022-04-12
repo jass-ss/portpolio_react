@@ -1,8 +1,11 @@
 figure {
 	width: 100%;
-	height: calc(100vh - 80px);
-	background: rgb(238, 186, 235);
+	height: 100vh;
+	margin-top: -80px;
+	background: rgb(186 238 236);
 	overflow: hidden;
+	position: relative;
+
 	h1 {
 		position: absolute;
 		top: 50%;
@@ -21,7 +24,7 @@ figure {
 		position: relative;
 		width: 150vmin;
 		height: 150vmin;
-		background-color: rgb(240, 211, 231);
+		background-color: rgba(255, 232, 248, 0.863);
 		margin-left: 50%;
 		margin-top: -18%;
 		border-radius: 50%;
