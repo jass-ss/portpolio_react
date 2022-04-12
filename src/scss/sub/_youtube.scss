@@ -8,7 +8,7 @@
 		width: 1180px;
 		margin: 0 auto;
 		position: relative;
-		margin-top: -15%;
+		margin-top: -13%;
 
 		h1 {
 			position: absolute;
@@ -46,13 +46,14 @@
 			}
 			.data {
 				width: 100%;
-				margin-top: 8vmin;
-				margin-bottom: 10vmin;
+				margin-top: 10vmin;
+				margin-bottom: 20vmin;
 				> article {
 					display: inline-block;
 					width: 33%;
 					height: 35vmin;
 					margin-right: 0.5%;
+					margin-top: 10%;
 					border-radius: 5px;
 					&:nth-of-type(3n) {
 						margin-right: 0;
