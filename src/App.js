@@ -15,6 +15,7 @@ import Help from './components/sub/Help';
 import Product from './components/sub/Product';
 import Store from './components/sub/Store';
 import Brand from './components/sub/Brand';
+import Member from './components/sub/Member';
 
 function App() {
 	return (

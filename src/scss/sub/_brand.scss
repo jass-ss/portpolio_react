@@ -1,0 +1,63 @@
+.content.brand {
+	width: 100%;
+	position: relative;
+
+	figure {
+		width: 100%;
+		height: calc(100vh - 110px);
+		background: rgb(27, 27, 27);
+		margin-top: auto;
+		position: relative;
+
+		img {
+			width: 50%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.txt {
+			width: 50%;
+			height: 100%;
+			top: 25%;
+			left: 50%;
+			position: absolute;
+			text-align: center;
+			h1 {
+				margin-top: 3%;
+				font: normal 40px/1 'arial';
+				color: #bbb;
+				margin-bottom: 50px;
+				z-index: 2;
+			}
+			svg {
+				width: 20%;
+				height: 20%;
+				fill: transparent;
+				stroke: #bbb;
+				stroke-width: 0.5vmin;
+				stroke-dasharray: 920;
+				stroke-dashoffset: 920;
+				transition: 5s;
+			}
+			p {
+				display: inline-block;
+				width: 80%;
+				color: #bbb;
+			}
+		}
+	}
+	.inner {
+		width: 1180px;
+		min-height: 400px;
+		margin: 0 auto;
+		position: relative;
+		opacity: 1;
+		transition: 0.5s;
+	}
+
+	&.on {
+		.inner {
+			transform: translateY(0px);
+			opacity: 1;
+		}
+	}
+}

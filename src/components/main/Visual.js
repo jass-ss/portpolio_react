@@ -9,17 +9,18 @@ const arr = [
 	'donut3',
 	'donut4',
 	'donut5',
-	'donut6',
-	'donut7',
-	'donut8',
+	'donut12',
+	'donut10',
+	'donut11',
 	'donut9',
 ];
 
 function Visual() {
 	let [count, setCount] = useState(0);
 	return (
-		<figure>
+		<figure className='visual'>
 			<h1>YOUR NEW STYLE</h1>
+			<h2>YOUR NEW STYLE</h2>
 			<p>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae
 				rerum, quae ea officiis atque temporibus!
