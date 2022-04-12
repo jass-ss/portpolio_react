@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/portpolio_react/static/css/main.cae6e01b.css",
+    "main.js": "/portpolio_react/static/js/main.3731bc13.js",
+    "index.html": "/portpolio_react/index.html",
+    "main.cae6e01b.css.map": "/portpolio_react/static/css/main.cae6e01b.css.map",
+    "main.3731bc13.js.map": "/portpolio_react/static/js/main.3731bc13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cae6e01b.css",
+    "static/js/main.3731bc13.js"
+  ]
+}
