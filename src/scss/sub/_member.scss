@@ -1,0 +1,238 @@
+.member {
+	width: 100%;
+
+	.list {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		margin-top: 20vmin;
+		font-size: 0;
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		> p {
+			font: 3vmin/1 'arial';
+			text-align: left;
+			position: absolute;
+			top: -5%;
+		}
+		> article {
+			position: relative;
+			display: inline-block;
+			width: 30%;
+			float: left;
+
+			&:hover {
+				img {
+					opacity: 0.7;
+				}
+				.box {
+					opacity: 1;
+				}
+			}
+
+			&:nth-of-type(1) {
+				width: 40%;
+				img {
+					height: 70vh;
+				}
+			}
+			&:nth-of-type(2) {
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				left: 0;
+				img {
+					height: 30vh;
+				}
+			}
+			img {
+				width: 100%;
+				height: 35vh;
+				object-fit: cover;
+				transition: 0.3s;
+			}
+			.box {
+				width: 100%;
+				position: absolute;
+				top: 5%;
+				left: 5%;
+				opacity: 0;
+				font: 2vmin/1 'arial';
+				transition: 1s;
+			}
+		}
+	}
+	.teams {
+		padding-top: 10vh;
+		position: relative;
+		font-size: 0;
+		width: 100%;
+		height: 600px;
+		p {
+			font: 3vmin/1 'arial';
+			text-align: left;
+		}
+		article {
+			display: inline-block;
+			width: 25%;
+			height: 40vmin;
+			img {
+				width: 100%;
+				height: 70%;
+				object-fit: cover;
+			}
+			p {
+				width: 100%;
+				height: 20%;
+				margin-top: 2vmin;
+				font: 2vmin/1 'arial';
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media screen and(max-width:1179px) {
+	.member {
+		.list {
+			width: 100%;
+			height: 100vmin;
+			> p {
+				font: 4vmin/1 'arial';
+				left: 5%;
+			}
+			> article {
+				&:hover {
+					img {
+						opacity: 0.7;
+					}
+					.box {
+						opacity: 1;
+					}
+				}
+
+				&:nth-of-type(1) {
+					img {
+						height: calc(100vmin * 0.7);
+					}
+				}
+				&:nth-of-type(2) {
+					img {
+						height: calc(100vmin * 0.3);
+					}
+				}
+				img {
+					height: calc(100vmin * 0.35);
+				}
+				.box {
+					width: 95%;
+				}
+			}
+		}
+		.teams {
+			padding-top: 10vh;
+			position: relative;
+			font-size: 0;
+			width: 100%;
+			height: 600px;
+			p {
+				font: 4vmin/1 'arial';
+				text-align: left;
+				margin-left: 5%;
+			}
+			article {
+				display: inline-block;
+				width: 25%;
+				height: 40vmin;
+				margin-top: 3vmin;
+				img {
+					width: 100%;
+					height: 70%;
+					object-fit: cover;
+				}
+				p {
+					margin: 0 auto;
+					width: 80%;
+					height: 30%;
+					margin-top: 2vmin;
+					font: 2vmin/1 'arial';
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media screen and(max-width:540px) {
+	.member {
+		.list {
+			width: 100%;
+			height: 50vh;
+			> p {
+				font: 4vmin/1 'arial';
+				left: 5%;
+			}
+			> article {
+				&:hover {
+					img {
+						opacity: 0.7;
+					}
+					.box {
+						opacity: 1;
+					}
+				}
+
+				&:nth-of-type(1) {
+					img {
+						height: calc(50vh * 0.7);
+					}
+				}
+				&:nth-of-type(2) {
+					img {
+						height: calc(50vh * 0.3);
+					}
+				}
+				img {
+					height: calc(50vh * 0.35);
+				}
+				.box {
+					width: 95%;
+				}
+			}
+		}
+		.teams {
+			padding-top: 10vh;
+			position: relative;
+			font-size: 0;
+			width: 100%;
+			height: 600px;
+			p {
+				font: 4vmin/1 'arial';
+				text-align: left;
+				margin-left: 5%;
+			}
+			article {
+				display: inline-block;
+				width: 50%;
+				height: 40vmin;
+				margin-top: 3vmin;
+				img {
+					width: 100%;
+					height: 90%;
+					object-fit: cover;
+				}
+				p {
+					margin: 0 auto;
+					width: 60%;
+					height: 10%;
+					margin-top: 2vmin;
+					font: 2vmin/1 'arial';
+					text-align: center;
+				}
+			}
+		}
+	}
+}
