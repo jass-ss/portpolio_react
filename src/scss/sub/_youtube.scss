@@ -1,0 +1,163 @@
+.content.youtube {
+	figure {
+		background-color: rgb(192, 166, 219);
+		width: 100%;
+		height: 50vh;
+		position: relative;
+	}
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+
+		.list {
+			width: 100%;
+			position: relative;
+			margin: 20vmin 0;
+			> h1 {
+				font: bold 4vmin/1 'Poopins';
+				text-align: center;
+			}
+			> p {
+				font: 2.5vmin/1 'Poopins';
+				text-align: center;
+			}
+			.youtube {
+				.main {
+					display: flex;
+					margin: 30px 0;
+					cursor: pointer;
+					img {
+						width: 40%;
+						height: 400px;
+						object-fit: cover;
+						margin-right: 10%;
+					}
+					.txt {
+						width: 50%;
+						height: 400px;
+						> h1 {
+							font: bold 5vmin 'Poppins';
+							margin-top: 50px;
+							margin-bottom: 4vmin;
+						}
+						> p {
+							font: 3vmin/1.5 'Lora';
+						}
+					}
+				}
+				.videos {
+					width: 100%;
+					margin-bottom: 150px;
+					cursor: pointer;
+					img {
+						width: 25%;
+						height: 250px;
+						padding: 10px;
+					}
+				}
+				.frame {
+					width: 100%;
+					position: relative;
+					.pics {
+						width: 100%;
+						overflow: hidden;
+						.slide {
+							width: calc((1180px / 3) * 7);
+							img {
+								width: calc(1180px / 3);
+								height: 300px;
+								padding: 0 5px;
+							}
+						}
+						.play,
+						.stop {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							display: none;
+							font: bold 7vmin/1 'Poppins';
+							color: #fff;
+						}
+					}
+					.prev {
+						position: absolute;
+						top: 50%;
+						left: -10%;
+						transform: translate(0%, -50%);
+						color: #666;
+						font: bold 5vmin/1 'Poppins';
+					}
+					.next {
+						position: absolute;
+						top: 50%;
+						right: -10%;
+						transform: translate(0%, -50%);
+						color: #666;
+						font: bold 5vmin/1 'Poppins';
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and(max-width:1179px) {
+	.content.youtube {
+		figure {
+			display: none;
+		}
+		.inner {
+			width: 100%;
+			padding-top: 12vmin;
+			.list {
+				width: 100%;
+				position: relative;
+				> article {
+					display: inline-block;
+					position: relative;
+					width: 50%;
+					height: 50vmin;
+					text-align: center;
+					background: none;
+					padding: 0;
+					margin-right: 0;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+					> P {
+						position: absolute;
+						bottom: 5%;
+						left: 5%;
+						color: #fff;
+						font: 3vmin 'arial';
+					}
+				}
+				.data {
+					width: 100%;
+					margin-top: 10vmin;
+					margin-bottom: 20vmin;
+					> article {
+						display: inline-block;
+						width: 33%;
+						height: 35vmin;
+						margin-right: 0.5%;
+						margin-top: 10%;
+						border-radius: 5px;
+						&:nth-of-type(3n) {
+							margin-right: 0;
+						}
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+				}
+			}
+		}
+	}
+}
